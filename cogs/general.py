@@ -32,8 +32,8 @@ class RPSParser:
             raise
 
 
-class General:
-    """General commands."""
+class Basic:
+    """Basic Commands that contain fun and test."""
 
     def __init__(self, bot):
         self.bot = bot
