@@ -16,7 +16,7 @@ def _get_from_servers(bot, getter, argument):
 
 class GlobalUser(IDConverter):
     """
-    This is an (almost) straight copy of discord.py's Member converter
+    This is an (edited) straight copy of discord.py's Member converter
     The key difference is that if the command is issued in a server it will
     first attempt to get the user from that server and upon failing it will
     attempt to fish it from the global pool
