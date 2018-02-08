@@ -24,7 +24,7 @@ from enum import Enum
 __author__ = "tekulvw"
 __version__ = "0.1.1"
 
-log = logging.getLogger("red.audio")
+log = logging.getLogger("hades.audio")
 
 try:
     import youtube_dl
@@ -195,7 +195,7 @@ class Playlist:
         dev notes:
         should probably be defined elsewhere later or be dynamic"""
 
-        # I don't know how global playlists are handled.
+        # We don't know how global playlists are handled.
         # Not sure if the framework is there for them to be editable.
         # Don't know how they are handled by Playlist
         # Don't know how they are handled by Audio
@@ -412,7 +412,7 @@ class Audio:
             if to_connect is None:
                 raise VoiceNotConnected("Okay somehow we're not connected and"
                                         " we have no valid channel to"
-                                        " reconnect to. In other words...LOL"
+                                        " reconnect to. In other words...Ouch"
                                         " REKT.")
             log.debug("valid reconnect channel for sid"
                       " {}, reconnecting...".format(server.id))
@@ -1138,7 +1138,7 @@ class Audio:
         """Set the max cache size in MB"""
         if size < self._cache_min():
             await self.bot.say("Sorry, but because of the number of servers"
-                               " that your bot is in I cannot safely allow"
+                               " that your bot is in I cannot allow access for"
                                " you to have less than {} MB of cache.".format(
                                    self._cache_min()))
             return
@@ -2368,7 +2368,7 @@ def setup(bot):
         raise RuntimeError(
             "{}.\nConsult the guide for your operating system "
             "and do ALL the steps in order.\n"
-            "https://twentysix26.github.io/Red-Docs/\n"
+            "https://discord.gg/XNcZRnh\n"
             "".format(msg))
 
     n = Audio(bot, player=player)  # Praise 26
