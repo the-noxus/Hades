@@ -530,9 +530,9 @@ def main():
         print("\n0. Quit")
         choice = user_choice()
         if choice == "1":
-            run_red(autorestart=True)
+            run_hades(autorestart=True)
         elif choice == "2":
-            run_red(autorestart=False)
+            run_hades(autorestart=False)
         elif choice == "3":
             update_menu()
         elif choice == "4":
