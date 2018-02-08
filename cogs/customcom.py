@@ -31,7 +31,7 @@ class CustomCommands:
         [p]customcom add yourcommand Text you want
 
         CCs can be enhanced with arguments:
-        https://twentysix26.github.io/Red-Docs/red_guide_command_args/
+        https://discord.gg/XNcZRnh
         """
         server = ctx.message.server
         command = command.lower()
