@@ -306,7 +306,7 @@ class Economy:
 
     @_bank.command(pass_context=True, no_pm=True)
     async def register(self, ctx):
-        """Registers an account at the Rory's bank"""
+        """Registers an account at the Hades Registry"""
         settings = self.settings[ctx.message.server.id]
         author = ctx.message.author
         credits = 0
