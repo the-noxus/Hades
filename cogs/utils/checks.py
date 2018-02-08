@@ -3,7 +3,7 @@ import discord.utils
 from __main__ import settings
 
 #
-# This is a modified version of checks.py, originally made by Rapptz
+# This has been modified by Shadow Scythe, First made by Rapptz
 #
 #                 https://github.com/Rapptz
 #          https://github.com/Rapptz/RoboDanny/tree/async
