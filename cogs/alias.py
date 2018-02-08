@@ -17,7 +17,7 @@ class Alias:
 
     @commands.group(pass_context=True, no_pm=True)
     async def alias(self, ctx):
-        """Manage per-server aliases for commands"""
+        """Manage server aliases for commands"""
         if ctx.invoked_subcommand is None:
             await send_cmd_help(ctx)
 
@@ -26,16 +26,16 @@ class Alias:
     async def _add_alias(self, ctx, command, *, to_execute):
         """Add an alias for a command
 
-           Example: !alias add test flip @Twentysix"""
+           Example: !alias add test flip @Hades"""
         server = ctx.message.server
         command = command.lower()
         if len(command.split(" ")) != 1:
-            await self.bot.say("I can't safely do multi-word aliases because"
+            await self.bot.say("I can't do multi-word aliases because"
                                " of the fact that I allow arguments to"
                                " aliases. It sucks, I know, deal with it.")
             return
         if self.part_of_existing_command(command, server.id):
-            await self.bot.say('I can\'t safely add an alias that starts with '
+            await self.bot.say('I can\'t add an alias that starts with '
                                'an existing command or alias. Sry <3')
             return
         prefix = self.get_prefix(server, to_execute)
