@@ -22,7 +22,7 @@ REPO_SAME = 0x4
 REPOS_LIST = "https://twentysix26.github.io/Red-Docs/red_cog_approved_repos/"
 WINDOWS_OS = os.name == 'nt'
 
-DISCLAIMER = ("You're about to add a 3rd party repository. The creator of Red"
+DISCLAIMER = ("You're about to add a 3rd party repository. The creator of any Cogs that you download"
               " and its community have no responsibility for any potential "
               "damage that the content of 3rd party repositories might cause."
               "\nBy typing 'I agree' you declare to have read and understand "
@@ -396,7 +396,7 @@ class Downloader:
         try:
             install_cog = await self.install(repo_name, cog, notify_reqs=True)
         except RequirementFail:
-            await self.bot.say("That cog has requirements that I could not "
+            await self.bot.say("That cog has requirements that We could not "
                                "install. Check the console for more "
                                "informations.")
             return
